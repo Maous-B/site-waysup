@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Way's UP</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.ico"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container" id="navbar-container">
+        <nav>
+            <a href="index.html"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-fw fa-home"></i>ACCUEIL</a></li>
+                <li><a href="aboutus.html"><i class="fa fa-fw fa-users"></i>À PROPOS DE NOUS</a></li>
+                <li class="dropdown-parent">
+
+                    <a href="#"><i class="fa fa-fw fa-graduation-cap"></i>NOS FORMATIONS<i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+
+                        <li>
+                            <a href="#">Formations diplômantes <i class="fa fa-arrow-right"></i></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="cip.html">CIP</a></li>
+                                <li><a href="bafa.html">BAFA</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#"></i>Formations à la carte <i class="fa fa-arrow-right"></i></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="management.html">Management</a></li>
+                                <li><a href="techniques-danimations.html">Techniques d'animations</a></li>
+                                <li><a href="communication.html">Communication</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i>NOUS CONTACTER</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>BAFA</h1>
+
+        <img src="bafa.png">
+        <hr>
+        <h2>I. Pourquoi obtenir le BAFA?</h2>
+        <p>Le Brevet d'Aptitude aux Fonctions d'Animateur (BAFA) est une formation reconnue en France qui permet d'acquérir les compétences nécessaires pour devenir animateur/trice et encadrer des enfants et des adolescents lors de séjours de vacances, de centres de loisirs ou d'activités périscolaires. Si vous êtes passionné(e) par l'animation, le BAFA peut vous ouvrir de nombreuses opportunités professionnelles enrichissantes. Cette présentation vous donnera un aperçu des étapes clés de la formation BAFA.</p>
+        
+        
+        <h2>II. Les étapes de la formation BAFA :</h2>
+        <h3>Stage de Formation Générale (8 jours) :</h3>
+        <ul>
+            <li>Ce premier stage vous initie aux bases de l'animation et vous permet de comprendre les responsabilités et le rôle de l'animateur.</li>
+            <li>Vous apprendrez à concevoir et à animer des activités adaptées à l'âge et aux intérêts des enfants.</li>
+            <li>Des formateurs expérimentés vous transmettront les connaissances nécessaires pour assurer la sécurité des participants.</li>
+        </ul>
+
+        <h3>Stage Pratique (14 jours minimum) :</h3>
+        <ul>
+            <li>Après la formation générale, vous devez effectuer un stage pratique dans une structure d'accueil (centre de loisirs, colonie de vacances, etc.).</li>
+            <li>Vous mettrez en pratique les enseignements reçus lors de la formation générale et participerez activement à l'animation des activités avec les enfants.</li>
+            <li>Ce stage vous permettra de développer votre expérience pratique et d'observer le fonctionnement d'une équipe d'animation.</li>
+        </ul>
+        
+        <h3>Stage d'Approfondissement ou de Qualification (8 jours) :</h3>
+        <ul>
+            <li>Après avoir validé votre stage pratique, vous pouvez choisir entre un stage d'approfondissement (thématique spécifique liée à l'animation) ou un stage de qualification (spécialisation dans une activité spécifique).</li>
+            <li>Ces stages vous permettent d'élargir vos compétences et de vous spécialiser dans un domaine qui vous intéresse particulièrement.</li>
+        </ul>
+
+        <h2>III. Validation du BAFA</h2>
+        <ul>
+            <li>Une fois que vous avez accompli les trois étapes de la formation, vous devez rédiger un rapport de stage pour témoigner de votre expérience pratique.</li>
+            <li>Ce rapport sera évalué par un jury qui validera votre formation BAFA et vous délivrera le diplôme.</li>
+        </ul>
+    </div>
+    
+    <script>
+
+        window.onscroll = function() {navBarScroll()};
+        var navbar = document.querySelector("#navbar-container");
+        var sticky = navbar.offsetTop;
+        function navBarScroll() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>
+</html>
+

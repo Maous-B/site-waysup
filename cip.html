@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Way's UP</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.ico"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container" id="navbar-container">
+        <nav>
+            <a href="index.html"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-fw fa-home"></i>ACCUEIL</a></li>
+                <li><a href="aboutus.html"><i class="fa fa-fw fa-users"></i>À PROPOS DE NOUS</a></li>
+                <li class="dropdown-parent">
+
+                    <a href="#"><i class="fa fa-fw fa-graduation-cap"></i>NOS FORMATIONS<i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+
+                        <li>
+                            <a href="#">Formations diplômantes <i class="fa fa-arrow-right"></i></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="cip.html">CIP</a></li>
+                                <li><a href="bafa.html">BAFA</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#"></i>Formations à la carte <i class="fa fa-arrow-right"></i></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="management.html">Management</a></li>
+                                <li><a href="techniques-danimations.html">Techniques d'animations</a></li>
+                                <li><a href="communication.html">Communication</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i>NOUS CONTACTER</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>Conseiller en insertion professionnelle</h1>
+        <img src="cip.png">
+        <hr>
+        <p>Les conseillers en insertion professionnelle facilitent l'insertion sociale et professionnelle des jeunes ou des adultes en difficulté d'insertion ou de reconversion par des réponses individualisées. Il considère les multiples dimensions de l'insertion : emploi, formation, logement, santé, mobilité, accès aux droits, etc.</p>
+        <p>Les conseillers professionnels en insertion interviennent dans différentes structures : missions locales, PAIO, centres d'hébergement et de réinsertion sociale, programmes locaux d'insertion économique, collectivités territoriales, associations et entreprises d'insertion, formation, filières d'emploi….</p>
+        <p>Il accueille des publics variés : jeunes adultes, demandeurs d'emploi de plus de 25 ans, adultes en reconversion ou reconversion, salariés ou non salariés, travailleurs handicapés, anciens détenus. Il les accompagne dans la structuration et la mise en œuvre de leurs parcours d'insertion sociale et professionnelle. Il développe des relations avec les employeurs de son secteur d'intervention, facilitant ainsi la mobilisation socio-économique du bassin d'emplois au service de l'insertion. Enfin, il participe au montage et à la conduite de projets répondant à des objectifs d'insertion et s'inscrivant dans des problématiques de développement local.</p>
+    
+        </div>
+    
+    <script>
+
+        window.onscroll = function() {navBarScroll()};
+        var navbar = document.querySelector("#navbar-container");
+        var sticky = navbar.offsetTop;
+        function navBarScroll() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>
+</html>
+
