@@ -3,6 +3,7 @@
 *{
     font-family: 'Istok Web', sans-serif;
     zoom: reset;
+    box-sizing: border-box;
 }
 
 i{
