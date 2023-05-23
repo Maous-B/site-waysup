@@ -7,20 +7,12 @@
 }
 
 
-body, html
-{
-    background: url("../img/handprint_bg.png") no-repeat center center fixed; 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    margin: 0px;
-    padding: 0px;
-}
 
 
 .container
 {
+    margin-right: -100px; 
+    margin-left: -100px;
     display: flex;
     background-color: #0368ff;
     position: relative;
@@ -65,7 +57,6 @@ nav ul li{
     list-style-type: none;
     display: inline-block;
     padding : 20px;
-    
 }
 
 nav ul li a{
@@ -163,20 +154,17 @@ nav ul li.dropdown-parent ul.dropdown li:hover > ul.sub-dropdown {
     opacity: 1;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 }
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
 padding-top: 60px;
 }
 
 .content {
-    padding: 16px;
     text-align: center;
     justify-content: center;
 }
