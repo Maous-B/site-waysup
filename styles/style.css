@@ -182,9 +182,13 @@ padding-top: 30px;
 footer
 {
     background-color: #88b8ff;
-    justify-content: center;
     text-align: center;
-    padding : 50px;
+    padding : 30px;
+}
+
+footer p{
+    display:block;
+    margin : 5px 0;
 }
 * {
 scrollbar-width: auto;
