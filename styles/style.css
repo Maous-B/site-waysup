@@ -160,6 +160,30 @@ nav ul li.dropdown-parent ul.dropdown li:hover > ul.sub-dropdown {
     opacity: 1;
 }
 
+nav ul li.dropdown-parent ul.sub-sub-dropdown {
+    background: #ffffff;
+    color: #000000;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+    z-index: 2; /* Assurez-vous que la sub-sub-dropdown est au-dessus de la sub-dropdown */
+}
+
+nav ul li.dropdown-parent ul.sub-sub-dropdown li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li.dropdown-parent ul.dropdown li:hover > ul.sub-sub-dropdown {
+    display: block;
+    opacity: 1;
+}
+
 .sticky {
     position: -webkit-sticky;
 	position: sticky;
