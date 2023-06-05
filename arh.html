@@ -10,6 +10,95 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="container" id="navbar-container">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-fw fa-home"></i> ACCUEIL </a></li>
+                <li><a href="aboutus.html"><i class="fa fa-fw fa-users"></i> À PROPOS DE NOUS </a></li>
+                <li class="dropdown-parent">
+
+                    <a href="#"><i class="fa fa-fw fa-graduation-cap"></i> NOS FORMATIONS <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+
+                        <li>
+                            <a href="#">Formations diplômantes <i class="fa fa-arrow-right"></i></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="cip.html">CIP</a></li>
+                                <li><a href="bafa.html">BAFA</a></li>
+                                <li><a href="arh.html">ARH</a></li>
+                                <li><a href="fpa.html">FPA</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#"></i>Formations à la carte <i class="fa fa-arrow-right"></i></a>
+                            <ul class="sub-dropdown">
+                                <li>
+                                    <a href="management.html">Management <i class="fa fa-arrow-right"></i></a>
+                                    <ul class="sub-sub-dropdown">
+                                        <li><a href="#">Gestion de conflits</a></li>
+                                        <li><a href="#">Menée de réunions</a></li>
+                                        <li><a href="#">Entretien de recrutement</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="techniques-danimations.html">Techniques d'animations <i class="fa fa-arrow-right"></i></a>
+                                    <ul class="sub-sub-dropdown">
+                                        <li><a href="#">Pyrogravure</a></li>
+                                        <li><a href="#">Jeux de société</a></li>
+                                        <li><a href="#">Champs et comptines</a></li>
+                                        <li><a href="#">Litérature jeunesse</a></li>
+                                        <li><a href="#">Cerf-volant</a></li>
+                                        <li><a href="#">Fabrication de poush car</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="communication.html">Communication</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Formation sur mesure</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> NOUS CONTACTER </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>Assistant.e Ressources Humaines</h1>
+        <img src="img/arh.jpg">
+        <hr>
+        <h2>Qu'est-ce qu'un.e assistant.e ressources humaines ?</h2>
+        <p>Les assistant.e.s aux ressources humaines travaillent sous la direction d'un responsable des ressources humaines ou d'un responsable des ressources humaines. Il est chargé de l'assister dans l'exercice de ses fonctions. Il travaille généralement dans une grande entreprise. En fait, il faut un effectif suffisamment important pour avoir plus d'une personne aux RH. Les tâches qui lui sont confiées varient d'une entreprise à l'autre. En général, plus l'entreprise est grande, plus elle est spécialisée. Son travail est d'abord administratif, et s'il est chargé de développer les ressources humaines au sein de l'entreprise en recrutant des salariés, il assure également la gestion administrative de l'ensemble des salariés de l'entreprise. Qu'il s'agisse de gérer les absences et les départs des salariés, de rédiger des contrats de travail ou d'organiser des visites médicales, les assistants RH seront parfaitement qualifiés pour ces multiples tâches. Pour en savoir plus sur les savoirs et savoir-faire spécifiques dans ce domaine, retrouvez le formulaire ROM Assistant Ressources Humaines sous le code M1501.</p>
+    </div>
     
+    <footer>
+        <p><i class="fa fa-phone-square"></i> 07.63.65.34.04</p>
+        <p><i class="fa fa-map-marker"></i> 17 rue des Bles, 93210 SAINT-DENIS</p>
+        <p>© 2023 Way's UP | All rights reserved</p>
+    </footer>
+    
+    <script>
+
+        window.onscroll = function() {navBarScroll()};
+        var navbar = document.querySelector("#navbar-container");
+        var sticky = navbar.offsetTop;
+        function navBarScroll() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
 </body>
 </html>
