@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Entretien de recrutement - Way's UP</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+    <div class="container" id="navbar-container">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-fw fa-home"></i> ACCUEIL </a></li>
+                <li><a href="aboutus.html"><i class="fa fa-fw fa-users"></i> À PROPOS DE NOUS </a></li>
+                <li class="dropdown-parent">
+
+                    <a href="#"><i class="fa fa-fw fa-graduation-cap"></i> NOS FORMATIONS <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+
+                        <li>
+                            <a href="#">Formations diplômantes <i class="fa fa-arrow-right"></i></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="cip.html">CIP</a></li>
+                                <li><a href="bafa.html">BAFA</a></li>
+                                <li><a href="arh.html">ARH</a></li>
+                                <li><a href="fpa.html">FPA</a></li>
+                                <li><a href="sams.html">SAMS</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#"></i>Formations à la carte <i class="fa fa-arrow-right"></i></a>
+                            <ul class="sub-dropdown">
+                                <li>
+                                    <a href="management.html">Management <i class="fa fa-arrow-right"></i></a>
+                                    <ul class="sub-sub-dropdown">
+                                        <li><a href="gestions-de-conflits.html">Gestion de conflits</a></li>
+                                        <li><a href="menee-de-reunions.html">Menée de réunions</a></li>
+                                        <li><a href="entretien-de-recrutement.html">Entretien de recrutement</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="techniques-danimations.html">Techniques d'animations <i class="fa fa-arrow-right"></i></a>
+                                    <ul class="sub-sub-dropdown">
+                                        <li><a href="pyrogravure.html">Pyrogravure</a></li>
+                                        <li><a href="jeux-de-societes.html">Jeux de société</a></li>
+                                        <li><a href="champs-et-comptines.html">Champs et comptines</a></li>
+                                        <li><a href="literature-jeunesse.html">Litérature jeunesse</a></li>
+                                        <li><a href="cerf-volant.html">Cerf-volant</a></li>
+                                        <li><a href="fabrication-de-push-car.html">Fabrication de push-car</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="communication.html">Communication</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Formation sur mesure</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> NOUS CONTACTER </a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <script>
+
+        window.onscroll = function() {navBarScroll()};
+        var navbar = document.querySelector("#navbar-container");
+        var sticky = navbar.offsetTop;
+        function navBarScroll() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
 </body>
 </html>
