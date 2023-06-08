@@ -54,8 +54,25 @@ p{
 }
 
 .content-li {
-    margin-right: 10px; /* Espace entre les éléments li */
+    margin-right: 10px;
+    text-align: justify;
 }
+
+.content-img
+{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.content-li p{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
 
 img
 {
@@ -185,7 +202,7 @@ nav ul li.dropdown-parent ul.sub-sub-dropdown {
     display: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: opacity 0.3s, visibility 0s linear 0.3s;
-    z-index: 2; /* Assurez-vous que la sub-sub-dropdown est au-dessus de la sub-dropdown */
+    z-index: 2;
 }
 
 nav ul li.dropdown-parent ul.sub-sub-dropdown li a {
