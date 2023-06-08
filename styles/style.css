@@ -9,8 +9,8 @@
 body
 {
     background-color: #e8e8e8;
-    margin : 0px;
-    padding : 0px;
+    margin : 0;
+    padding : 0;
 }
 
 
@@ -40,8 +40,9 @@ li{
 
 p{
     font-size: 20px;
-    margin-left : auto; margin-right: auto;
+    padding-left: 10px; padding-right: 10px;
 }
+
 
 
 .content-ul {
